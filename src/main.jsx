@@ -1,20 +1,3 @@
-// import { StrictMode } from 'react'
-// import { createRoot } from 'react-dom/client'
-// import './index.css'
-// import App from './App.jsx'
-// import CartProvider from './context/CartContext'   // 👈 ADD THIS
-// import { ToastContainer } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
-
-// createRoot(document.getElementById('root')).render(
-//   <StrictMode>
-//     <CartProvider>   {/* 👈 WRAP APP */}
-//       <App />
-//     </CartProvider>
-//   </StrictMode>,
-// )
-
-
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
@@ -28,7 +11,6 @@ createRoot(document.getElementById('root')).render(
     <CartProvider>
       <App />
       
-      {/* 🔥 ADD THIS (VERY IMPORTANT) */}
       <ToastContainer 
         position="top-right"
         autoClose={2000}
