@@ -1,36 +1,3 @@
-// import { useContext } from "react";
-// import { CartContext } from "../context/CartContext";
-
-// function Wishlist() {
-//   const { wishlistItems, removeFromWishlist } = useContext(CartContext);
-
-//   return (
-//     <div className="p-10">
-//       <h2 className="text-2xl font-bold mb-6">Wishlist</h2>
-
-//       {wishlistItems.length === 0 ? (
-//         <p>No items in wishlist</p>
-//       ) : (
-//         wishlistItems.map((item) => (
-//           <div key={item.id} className="flex justify-between border p-4 mb-4">
-//             <p>{item.title}</p>
-
-//             <button
-//               onClick={() => removeFromWishlist(item.id)}
-//               className="text-red-500"
-//             >
-//               Remove
-//             </button>
-//           </div>
-//         ))
-//       )}
-//     </div>
-//   );
-// }
-
-// export default Wishlist;
-
-
 import useCart from "../hooks/useCart";
 import { FaTrash } from "react-icons/fa";
 
